@@ -30,7 +30,7 @@ import { ArrowRight, ArrowLeft, PaperPlaneTilt, Info,  ShieldCheck } from "@phos
 import { DatePickerInput } from "@mantine/dates"
 import PhoneInputModule from "react-phone-input-2";
 import dayjs from "dayjs"
-
+import type { FormData } from "../../../types/registro";
 
 
 const PhoneInput =
@@ -78,27 +78,6 @@ const stepFields: (keyof FormData)[][] = [
   ["curso", "fotoPerfil"], // Paso 5
   ["privacidad"], // Paso 6
 ];
-
-interface FormData {
-  email: string;
-  password: string;
-  nombre: string;
-  apellido: string;
-  telefono: number | string;
-   fechaNacimiento: Date | null;
-  edad: number;
-  genero: string;
- 
-  escolaridad: string;
-  especialidad: string;
-  
-  pais: string;
-  estado?: string;
-  municipio?: string;
-  curso: string;
-  fotoPerfil?: File | null;
-  privacidad: boolean;
-}
 
 
 
